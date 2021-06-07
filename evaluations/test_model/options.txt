@@ -1,0 +1,18 @@
+------------ Options -------------
+arch: default_convnet
+batch_size: 64
+checkpoint: models_trained/test_model/model_best_acc.pth.tar
+cpu: True
+evaluation_name: test_model
+gpu: 0
+n_episodes: 4
+n_query: 5
+n_support: 5
+n_way: 4
+results_name: None
+support_ori: train_ori_specs_meta
+test_dir: None
+test_gen: train_gan_aug_meta
+train_dir: None
+workers: 1
+-------------- End ----------------

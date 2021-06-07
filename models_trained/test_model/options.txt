@@ -1,0 +1,38 @@
+------------ Options -------------
+alpha: 0.0
+arch: default_convnet
+batch_size: 256
+dist_backend: nccl
+dist_url: tcp://224.66.41.62:23456
+epochs: 1
+evaluate: False
+gamma: 0.5
+gpu: None
+image_size: 224
+lr: 0.001
+model_name: test_model
+momentum: 0.9
+multiprocessing_distributed: False
+n_episodes_train: 5
+n_episodes_val: 4
+n_query_train: 20
+n_query_val: 10
+n_support: 5
+n_way_train: 4
+n_way_val: 4
+optimizer: adam
+out_dim: None
+pretrained: False
+print_freq: 10
+rank: -1
+resume: 
+seed: None
+start_epoch: 0
+step_size: 20
+train_csv: train_ori_specs_meta
+train_dir: None
+val_dir: None
+weight_decay: 0.0001
+workers: 4
+world_size: -1
+-------------- End ----------------
