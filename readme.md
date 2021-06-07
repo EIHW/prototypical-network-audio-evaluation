@@ -1,6 +1,3 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
-
 ## A Prototypical Network Approach for Evaluating Generated Emotional Speech
 
 This repository contains code for the INTERSPEECH 2021 paper :page_facing_up: "A Prototypical Network Approach for Evaluating Generated Emotional Speech", by Alice Baird, Silvan Mertes, Manuel Milling, Lukas Stappen, Thomas Wiest, Elisabeth André, and Björn W. Schuller.
