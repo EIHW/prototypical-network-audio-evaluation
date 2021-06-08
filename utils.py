@@ -82,3 +82,41 @@ def accuracy_top_k(output, target, top_k=(1,)):
         correct_k = correct[:k].view(-1).float().sum(0, keepdim=True)
         res.append(correct_k.mul_(1.0 / batch_size))
     return res
+
+def point_distance(point1, point2, metric="EUCLIDEAN"):
+    if metric == "EUCLIDEAN":
+        return np.sqrt(np.sum((point1 - point2)**2))
+
+def remvove_doubles(points):
+
+    new_points = []
+    for point in points:
+        min_dist = np.inf
+        for i in range(len(new_points)):
+            dist = point_distance(point, new_points[i])
+            if dist < min_dist:
+                min_dist = dist
+        if min_dist > 1e-10:
+            new_points.append(point)
+    new_points = np.array(new_points)
+    return new_points
+
+def get_distance_matrix(points1, points2):
+    length_1 = len(points1)
+    length_2 = len(points2)
+    dist_matrix = np.empty((length_1, length_2))
+    for i in range(length_1):
+        for j in range(length_2):
+            dist_matrix[i,j] = point_distance(points1[i], points2[j])
+    return dist_matrix
+
+def find_minimal_average_distance_betwen_points(dist_matrix):
+    length = len(dist_matrix)
+    total_distance = 0
+    for i in range(length):
+        dist_row = dist_matrix[i, :]
+        min_idx = np.argmin(dist_row)
+        min_dist = dist_row[min_idx]
+        total_distance += min_dist
+
+    return total_distance/length
