@@ -4,7 +4,7 @@ This repository contains code for the INTERSPEECH 2021 paper :page_facing_up: "A
 
 The prototypical network applied is adapated based on the Py-torch implementation from <a href="https://github.com/jsalbert/prototypical-networks">Snell et al</a>.
 
-Here we include code for the prototypical network, and embedding-space evaluation. We also include `augmentation_options.py` for the data augmentation methods applied. More detail on SpecAug found <a href="https://github.com/DemisEom/SpecAugment"> here</a>. For audio generation <a href="https://github.com/chrisdonahue/wavegan">WaveGAN</a> was applied. 
+Here we include code for the adapted prototypical network, and embedding-space evaluation. We also include `augmentation_options.py` for the data augmentation methods applied. More detail on SpecAug found <a href="https://github.com/DemisEom/SpecAugment"> here</a>. For audio generation <a href="https://github.com/chrisdonahue/wavegan">WaveGAN</a> was applied. 
 
 Any questions feel free to reach out! :e-mail: alicebaird@ieee.org
 
@@ -24,7 +24,7 @@ source .protonets/bin/activate
 pip install -r requirements.txt
 ```
 
-3. Due to data sharing limitations, we share only the WaveGAN generated spectrogram images (based on the original training set). To test the code you can <a href="https://github.com/EIHW/prototypical-network-audio-evaluation/tree/main/data">unzip</a>, the archive included these here. If you would like the GEMEP sub-set used in the publication get in touch. 
+3. Due to data sharing limitations, we share only the WaveGAN generated spectrogram images (based on the original training set). To test the code you can <a href="https://github.com/EIHW/prototypical-network-audio-evaluation/tree/main/data">unzip</a>, the archive included here. If you would like the GEMEP sub-set used in the publication get in touch. 
 
 ### Train and Test :steam_locomotive: 
 
@@ -70,7 +70,7 @@ A.Baird, S. Mertes, M. Milling, L. Stappen, T. Wiest, E. André, and B. W. Schul
 }
 ```
 
-Thanks to the contributers of this repository :smiling_face_with_three_hearts:. 
+Thanks to the contributers of this repository :smiling_face_with_three_hearts:.
 
 <table>
   <tr>
