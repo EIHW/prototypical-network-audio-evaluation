@@ -1,0 +1,8 @@
+embeddings/__MACOSX/
+embeddings/develtest8k256/
+embeddings/train-aug-wSpecAug/
+embeddings/train-aug-wTime-shift/
+embeddings/train-aug-wnoise/
+embeddings/train-aug-wwaveGan/
+embeddings/train8k256/
+
