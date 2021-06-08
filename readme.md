@@ -45,11 +45,13 @@ We also include a script (`tsne-plot.py`) to visualise more easily the embedding
 <img src="https://github.com/EIHW/prototypical-network-audio-evaluation/blob/main/plot_ex.png" width="350" />
 
 
-### Point-wise embedding space diversity
+### Pair-wise embedding space diversity
 
 1. To download the emeddings from all experiemnts of the <i>Baird et al</i>, you can <a href="https://drive.google.com/file/d/1UYchZpFJfiL8fBj9JazGqEz3rfO9shOZ/view?usp=sharing">download</a> and place these under embeddings/.
 
-TO DO
+2. Run `embedding_diversity_analysis.py` to calculate a average pair-wise distance between two points from source samples and different augmentation techniques for each emotion.
+
+3. Results are stored as csv-file (with French emotion labels) and as heatmaps (with English emotion label) in the folder `result_pairwise_distance/`.
 
 
 
