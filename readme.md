@@ -47,7 +47,7 @@ We also include a script (`tsne-plot.py`) to visualise more easily the embedding
 
 ### Pair-wise embedding space diversity
 
-1. To download the emeddings from all experiemnts of the <i>Baird et al</i>, you can <a href="https://drive.google.com/file/d/1UYchZpFJfiL8fBj9JazGqEz3rfO9shOZ/view?usp=sharing">download</a> and place these under embeddings/.
+1. To utilise the emeddings from all experiments of <i>Baird et al</i>, you can <a href="https://drive.google.com/file/d/1UYchZpFJfiL8fBj9JazGqEz3rfO9shOZ/view?usp=sharing">download</a> and place these under embeddings/.
 
 2. Run `embedding_diversity_analysis.py` to calculate a average pair-wise distance between two points from source samples and different augmentation techniques for each emotion.
 
