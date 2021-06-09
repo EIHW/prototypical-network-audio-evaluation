@@ -8,6 +8,7 @@ from matplotlib.pyplot import figure
 from matplotlib.collections import PathCollection
 from matplotlib.legend_handler import HandlerPathCollection, HandlerLine2D
 import seaborn as sns
+import os  
 
 sns.set_style("whitegrid")
 
@@ -17,19 +18,26 @@ def update(handle, orig):
 
 figure(figsize=(8, 6), dpi=80)
 
-colorname= ['green','gray','purple','red']
 markers = ['x', '+', 'o', '*', 'x', '+']
 
 emotions = ["joi", "col","pla","tri"]
 emotion_english =['Elation','Anger','Pleasure','Sad']
 
+
 colors = ['#695167','#B85B4F', '#9E8F8D', '#697848',  'black']
+colorname= ['green','gray','purple','red']
+
 
 home = 'embeddings/train8k256/train-embeddings/'
-proto_files = glob(home + '*.txt')
+proto_files = glob.glob(home + '*.txt')
 
 augs = ['wavegan','source']
 augs_true = ['WaveGAN','Source']
+
+# tsne hps
+lr = 20
+perp = 90
+instances = 2
 
 def point_distance(point1, point2, metric="EUCLIDEAN"):
     if metric == "EUCLIDEAN":
@@ -47,17 +55,16 @@ def remvove_doubles(points):
             new_points.append(point)
     new_points = np.array(new_points)
     return new_points
-lr = 20
-perp = 90
-interp = 1
-for interp in range(0,10):
+
+for interp in range(0,instances):
 	for num_aug in range(len(augs)): 
 		print(augs[num_aug])
 		aug_type = augs[num_aug] 
 		home = 'embeddings/train8k256/test-train-embeddings/' + aug_type +'/'
-		embedding_files = glob(home + '*.txt')
+		embedding_files = glob.glob(home + '*.txt')
 		augmentation_techniques = []
-		result_dir = "results/"
+		result_dir = "tsne-plot/"
+		os.makedirs(result_dir, exist_ok=True)
 		prototypes = []
 		all_embeddings = []
 		all_num_embeddings = []
