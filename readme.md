@@ -38,13 +38,6 @@ This version of the code has been adapted to run without a GPU.
 
 `bash test_spec_gen.sh model_name`
 
-### Visualise prototypes and embeddings space :eyes:
-
-We also include a script (`tsne-plot.py`) to visualise more easily the embedding space. 
-
-<img src="https://github.com/EIHW/prototypical-network-audio-evaluation/blob/main/plot_ex.png" width="350" />
-
-
 ### Pair-wise embedding space diversity
 
 1. To utilise the emeddings from all experiments of <i>Baird et al</i>, you can <a href="https://drive.google.com/file/d/1UYchZpFJfiL8fBj9JazGqEz3rfO9shOZ/view?usp=sharing">download</a> and place these under embeddings/.
@@ -53,6 +46,11 @@ We also include a script (`tsne-plot.py`) to visualise more easily the embedding
 
 3. Results are stored as csv-file (with French emotion labels) and as heatmaps (with English emotion label) in the folder `result_pairwise_distance/`.
 
+### Visualise prototypes and embeddings space :eyes:
+
+We also include a script (`tsne-plot.py`) to visualise more easily the embedding space (using the same embeddings as the previous step). 
+
+<img src="https://github.com/EIHW/prototypical-network-audio-evaluation/blob/main/plot_ex.png" width="350" />
 
 
 ### Citation and Contributors
