@@ -10,7 +10,7 @@ Any questions feel free to reach out! :e-mail: alicebaird@ieee.org
 
 ### Setup :gear:	 
 
-1. Install virtualenv, create and activate new enviroment
+1. Install a virtualenv, and create and activate a new enviroment
 
 ```
 pip3 install virtualenv 
