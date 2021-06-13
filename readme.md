@@ -46,7 +46,7 @@ This version of the code has been adapted to run without a GPU.
 
 3. Results are stored as csv-file (with French emotion labels) and as heatmaps (with English emotion label) in the folder `result_pairwise_distance/`.
 
-### Visualise prototypes and embeddings space :eyes:
+### Visualise prototypes and embedding space :eyes:
 
 We also include a script (`tsne-plot.py`) to visualise more easily the embedding space (using the same embeddings as the previous step). 
 
