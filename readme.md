@@ -1,7 +1,7 @@
 ## A Prototypical Network Approach for Evaluating Generated Emotional Speech
 
 This repository contains code for the INTERSPEECH 2021 paper :page_facing_up: "A Prototypical Network Approach for Evaluating Generated Emotional Speech", by Alice Baird, Silvan Mertes, Manuel Milling, Lukas Stappen, Thomas Wiest, Elisabeth André, and Björn W. Schuller.
-
+ 
 The prototypical network applied is adapated based on the Py-torch implementation from <a href="https://github.com/jsalbert/prototypical-networks">Snell et al</a>.
 
 Here we include code for the adapted prototypical network, and embedding-space evaluation. We also include `augmentation_options.py` for the data augmentation methods applied. More detail on SpecAug found <a href="https://github.com/DemisEom/SpecAugment"> here</a>. For audio generation <a href="https://github.com/chrisdonahue/wavegan">WaveGAN</a> was applied. 
